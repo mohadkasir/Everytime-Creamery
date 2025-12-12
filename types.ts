@@ -14,6 +14,7 @@ export interface IProduct {
   price250: number;
   price500: number;
   description: string;
+  image: string; // Static image path
   imagePrompt: string; // Stored for reference/meta
   isBestseller?: boolean;
 }
