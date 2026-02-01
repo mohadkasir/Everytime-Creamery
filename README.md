@@ -1,20 +1,47 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Everytime Creamery
 
-# Run and deploy your AI Studio app
+A premium e-commerce experience for Everytime Creamery, featuring a Golden Ratio layout and direct WhatsApp ordering integration.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/18c1khuXc08jIN1jFSBu44bkV2_jSXMkU
+-   **Premium Design**: Inspired by the Golden Ratio and Divine Proportion.
+-   **WhatsApp Integration**: Direct ordering via WhatsApp with auto-generated messages.
+-   **Responsive**: Fully responsive design for all devices.
+-   **Fast**: Built with Vite and React for optimal performance.
+
+## Tech Stack
+
+-   **Frontend**: React, TypeScript, Vite
+-   **Styling**: Tailwind CSS
+-   **Animations**: GSAP (GreenSock Animation Platform)
+-   **State Management**: Zustand
+-   **Routing**: React Router DOM
 
 ## Run Locally
 
 **Prerequisites:**
-- [Node.js](https://nodejs.org/) (Run `node -v` to check installation)
-- [npm](https://www.npmjs.com/) (Run `npm -v` to check installation)
 
-1. Install dependencies:
-   `npm install`
-2. Run the app:
-   `npm run dev`
+-   [Node.js](https://nodejs.org/) (v16+)
+-   [npm](https://www.npmjs.com/)
+
+1.  **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+2.  **Start the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+3.  **Build for production:**
+
+    ```bash
+    npm run build
+    ```
+
+## License
+
+All rights reserved.

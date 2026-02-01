@@ -50,7 +50,7 @@ const Hero = () => {
             <div ref={bgRef} className="absolute inset-0 z-0 scale-110">
                 <div className="absolute inset-0 bg-brand-dark/20 z-10"></div>
                 <img
-                    src="/images/c1.png"
+                    src={`${import.meta.env.BASE_URL}images/hero.png`}
                     alt="Everytime Creamery"
                     className="w-full h-full object-cover"
                 />
