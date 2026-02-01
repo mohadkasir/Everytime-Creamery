@@ -1,4 +1,5 @@
 import Button from '../ui/Button';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -31,20 +32,21 @@ const Footer = () => {
                 <div className="md:col-span-2 space-y-6">
                     <h4 className="font-serif text-lg text-brand-gold">Shop</h4>
                     <ul className="space-y-3 text-sm font-light opacity-70">
-                        <li><a href="/menu" className="hover:text-brand-white transition-colors">Our Flavours</a></li>
-                        <li><a href="/gifting" className="hover:text-brand-white transition-colors">Gifting</a></li>
-                        <li><a href="#" className="hover:text-brand-white transition-colors">Bundles</a></li>
-                        <li><a href="#" className="hover:text-brand-white transition-colors">Subscriptions</a></li>
+                        <li><Link to="/menu" className="hover:text-brand-white transition-colors">Our Flavours</Link></li>
+                        <li><Link to="/gifting" className="hover:text-brand-white transition-colors">Gifting</Link></li>
+                        <li><Link to="#" className="hover:text-brand-white transition-colors">Bundles</Link></li>
+                        <li><Link to="#" className="hover:text-brand-white transition-colors">Subscriptions</Link></li>
                     </ul>
                 </div>
 
+                {/* Company - Span 2 cols by 2 */}
                 <div className="md:col-span-2 space-y-6">
                     <h4 className="font-serif text-lg text-brand-gold">Company</h4>
                     <ul className="space-y-3 text-sm font-light opacity-70">
-                        <li><a href="/about" className="hover:text-brand-white transition-colors">Our Story</a></li>
-                        <li><a href="#" className="hover:text-brand-white transition-colors">Careers</a></li>
-                        <li><a href="/contact" className="hover:text-brand-white transition-colors">Contact</a></li>
-                        <li><a href="#" className="hover:text-brand-white transition-colors">FAQ</a></li>
+                        <li><Link to="/about" className="hover:text-brand-white transition-colors">Our Story</Link></li>
+                        <li><Link to="#" className="hover:text-brand-white transition-colors">Careers</Link></li>
+                        <li><Link to="/contact" className="hover:text-brand-white transition-colors">Contact</Link></li>
+                        <li><Link to="#" className="hover:text-brand-white transition-colors">FAQ</Link></li>
                     </ul>
                 </div>
 

@@ -12,6 +12,8 @@ export const APP_CONFIG: IConfig = {
   }
 };
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 export const INVENTORY: IProduct[] = [
   // Classic
   {
@@ -22,7 +24,7 @@ export const INVENTORY: IProduct[] = [
     price500: 289,
     description: 'The original classic. Pure, creamy, and nostalgic.',
     imagePrompt: 'Macro shot of vanilla ice cream scoop, real bean specks, creamy texture, rich cream background, soft gold lighting, photorealistic food photography --ar 4:5',
-    image: '/images/c1.png'
+    image: `${BASE_URL}images/c1.png`
   },
   {
     id: 'c2',
@@ -33,7 +35,7 @@ export const INVENTORY: IProduct[] = [
     description: 'Fresh tender coconut bits blended into creamy perfection.',
     imagePrompt: 'Scoop of white coconut ice cream, bits of fresh tender coconut visible, tropical lighting, soft focus leaf shadow, photorealistic food photography --ar 4:5',
     isBestseller: true,
-    image: '/images/c2.png'
+    image: `${BASE_URL}images/c2.png`
   },
   // Premium
   {
@@ -44,7 +46,7 @@ export const INVENTORY: IProduct[] = [
     price500: 329,
     description: 'A royal blend of Arabian dates and organic honey.',
     imagePrompt: 'Rich beige ice cream, glossy honey drizzle, chopped dates, warm golden hour lighting, cinematic composition, photorealistic food photography --ar 4:5',
-    image: '/images/p1.png'
+    image: `${BASE_URL}images/p1.png`
   },
   {
     id: 'p2',
@@ -55,7 +57,7 @@ export const INVENTORY: IProduct[] = [
     description: 'Crunchy crushed Oreos swirled in vanilla cream.',
     imagePrompt: 'Cookies and cream ice cream, large chunk of oreo cookie, high contrast texture, bright studio lighting, photorealistic food photography --ar 4:5',
     isBestseller: true,
-    image: '/images/p2.png'
+    image: `${BASE_URL}images/p2.png`
   },
   // Luxury
   {
@@ -66,7 +68,7 @@ export const INVENTORY: IProduct[] = [
     price500: 349,
     description: 'Real strawberries meeting rich cream cheese.',
     imagePrompt: 'Pink strawberry cheesecake ice cream, fresh strawberry slices, crumbly biscuit topping, pastel aesthetic, photorealistic food photography --ar 4:5',
-    image: '/images/l1.png'
+    image: `${BASE_URL}images/l1.png`
   },
   {
     id: 'l2',
@@ -76,7 +78,7 @@ export const INVENTORY: IProduct[] = [
     price500: 349,
     description: 'The malted magic of Milo in a frozen treat.',
     imagePrompt: 'Malted chocolate ice cream, dusting of Milo powder, vintage spoon, warm brown tones, cozy atmosphere, photorealistic food photography --ar 4:5',
-    image: '/images/l2.png'
+    image: `${BASE_URL}images/l2.png`
   },
   {
     id: 'l3',
@@ -86,7 +88,7 @@ export const INVENTORY: IProduct[] = [
     price500: 349,
     description: 'Decadent caramel ribbons with cookie crunch.',
     imagePrompt: 'Caramel swirl ice cream, dripping golden caramel sauce, cookie crumbles, dramatic side lighting, photorealistic food photography --ar 4:5',
-    image: '/images/l3.png'
+    image: `${BASE_URL}images/l3.png`
   },
   // Ultra
   {
@@ -98,6 +100,6 @@ export const INVENTORY: IProduct[] = [
     description: 'Premium hazelnuts and authentic Nutella swirl.',
     imagePrompt: 'Swirls of dark hazelnut chocolate, glossy texture, whole roasted hazelnuts, studio lighting, hyper-detailed, photorealistic food photography --ar 4:5',
     isBestseller: true,
-    image: '/images/u1.png'
+    image: `${BASE_URL}images/u1.png`
   }
 ];
