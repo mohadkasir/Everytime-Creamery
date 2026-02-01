@@ -51,7 +51,7 @@ export default function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
       {loading && <Loader onComplete={() => setLoading(false)} />}
       <div className="min-h-screen bg-brand-cream text-brand-dark overflow-x-hidden font-sans">
